@@ -7,7 +7,11 @@ function loadHtml(targetId, filePath) {
       return res.text();
     })
     .then(html => {
-      document.getElementById(targetId).innerHTML = html;
+      const targetElement = document.getElementById(targetId);
+      targetElement.innerHTML = html;
+
+      // Now apply font scaling based on the aspect ratio
+      adjustByAspectRatio();
     })
     .catch(err => {
       console.error(err);
