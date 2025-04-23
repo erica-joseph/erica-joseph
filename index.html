@@ -28,19 +28,19 @@
       </div>
      
         <div class = "hnavbutton">
-          <button class = "hbtn" id ="home"> HOME </button>
+          <button class = "hbtn" id ="hhome"> HOME </button>
           <div class="btnline"></div>
         </div>
         <div class = "hnavbutton">
-          <button class = "hbtn" id ="projects"> PROJECTS </button>
+          <button class = "hbtn" id ="hprojects"> PROJECTS </button>
           <div class="btnline"></div>
         </div>
         <div class = "hnavbutton">
-          <button class = "hbtn" id ="interests"> INTERESTS </button>
+          <button class = "hbtn" id ="hinterests"> INTERESTS </button>
           <div class="btnline"></div>
         </div>  
         <div class = "hnavbutton">
-          <button class = "hbtn" id ="contact"> CONTACT </button>
+          <button class = "hbtn" id ="hcontact"> CONTACT </button>
           <div class="btnline"></div>
         </div>
 
@@ -126,6 +126,23 @@
     loadHtml('content', 'contact.html');
   });
   document.getElementById('home').addEventListener('click', () => {
+  console.log("Home invoked.");
+    loadHtml('content', 'home.html');
+  });
+
+     document.getElementById('hprojects').addEventListener('click', () => {
+  console.log("Projects invoked.");
+    loadHtml('content', 'projects.html');
+  });
+  document.getElementById('hinterests').addEventListener('click', () => {
+  console.log("Interests invoked.");
+    loadHtml('content', 'interests.html');
+  });
+  document.getElementById('hcontact').addEventListener('click', () => {
+  console.log("Contact invoked.");
+    loadHtml('content', 'contact.html');
+  });
+  document.getElementById('hhome').addEventListener('click', () => {
   console.log("Home invoked.");
     loadHtml('content', 'home.html');
   });
