@@ -48,6 +48,7 @@ body {
      -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
+  overflow: scroll;
 }
 .profile {
     width: 7vw;
@@ -252,4 +253,22 @@ body {
 @keyframes example {
   0%   {background-color: white; width: 0%;}
   100% {background-color: white; width: 50%;}
+}
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
 }
