@@ -153,15 +153,17 @@
   const landscape = document.getElementById('landscapeElement');
   const portrait = document.getElementById('portraitElement');
   const container = document.getElementById('container');
-
+  const content = document.getElementById('content');
   if (aspect > 1.5) {
     landscape.style.display = 'block';
     portrait.style.display = 'none';
     container.style.width = "80vw"
+    content.style.fontSize = "1vw";
   } else if (aspect <= 1.5) {
     landscape.style.display = 'none';
     portrait.style.display = 'flex';
     container.style.width = "100vw"
+    content.style.fontSize = "3vw";
   } 
 }
 
